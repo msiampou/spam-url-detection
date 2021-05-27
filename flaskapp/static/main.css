@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i|Poppins:300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Forum");
+@import url("https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Josefin+Slab:100,100i,300,300i,400,400i,600,600i,700,700i|Marcellus|Nanum+Myeongjo:400,700,800|Old+Standard+TT:400,400i,700|Prata|Vidaloka");
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+a{
+    text-decoration: none;
+}
+
+
+h3{
+    font-weight: 100;
+    font-size: 50px;
+    font-family: "Marcellus", serif;
+    color: white;
+    padding: 3em ;
+    text-align: center;
+  }
+
+body{
+    align-items: center;
+    /* This section calls the slideInFromLeft animation we defined above */
+    animation: .7s ease-out 0s 1 slideInFromLeft;
+}
+
+.message button{
+    all: unset;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    background: transparent;
+    border: 2px solid white;
+    padding: 1em 4em;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: x-large;
+    color: white;
+  }
+  
+  .message button:hover {
+    background: #435b72;
+    border-color: #435b72;
+    transition: all .75s;
+  }
+  .message button:hover:before {
+    width: 100%;
+  }
