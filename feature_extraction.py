@@ -26,7 +26,7 @@ class URL:
         domain_tokens = re.split('\W+', self.domain)
         domain_token_count = len(domain_tokens)
         avgdomaintokenlen = -1 if domain_token_count == 0 else len(''.join(domain_tokens)) / domain_token_count
-        NumberofDotsinURL = self.url.count('\.')  # str object has no attribute str
+        NumberofDotsinURL = self.url.count('\.')
         Entropy_Domain = shannon(self.domain)
         URLQueries_variable = len(self.query)
         ArgUrlRatio = -1 if len(self.url) == 0 else len(self.query) / len(self.url)
