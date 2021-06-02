@@ -100,7 +100,7 @@ $ python -m flask run
 Having a trained model, our application receives a URL and outputs whether this URL is spam or not. Our model is trained on ISCXURL2016 Final Spam dataset, using Random Forest.
 
 #### Code
-The implementation of our application lies under app/ folder.
+The implementation of our application lies under several files in main folder. Each file has a discriptive name that yeilds its use.
 
 ### Presentation
 
