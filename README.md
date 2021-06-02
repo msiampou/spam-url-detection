@@ -4,7 +4,7 @@
 
 ### Abstract
 
-In this work we create a classification model to identify Spam Pages based on their *URL*. ISCXURL2016 dataset, contains 79 features extracted from various benign and spam URLs. However, having a large number of features may lead overfitting, or consume extra time to compute unecessary features. For that reason, we performed a feature exploration and chose to use only the most "meaningful" features. To evaluate our selection, we've performed a Cross Validation for various classifiers. Finally, we've implemented a simple Flask App, where a user can insert a URL to find out if it is spam or not.
+In this work we create a classification model to identify Spam Pages based on their *URL*. ISCXURL2016 dataset, contains 79 features extracted from various benign and spam URLs. However, having a large number of features may lead overfitting, or consume extra time to compute unnecessary features. For that reason, we performed a feature exploration and chose to use only the most "meaningful" features. To evaluate our selection, we've performed a Cross Validation for various classifiers. Finally, we've implemented a simple Flask App, where a user can insert a URL to find out if it is spam or not.
 
 ### Datasets
 
@@ -18,7 +18,7 @@ Spam+Benign URL dataset: A concatenation of Spam & Benign URL datasets.
 
 ### Feature selection
 
-In order to keep the most important features, we've created two sets of featues. The first one contained the ones that are highly correlated (with threashold = 0.85) and the second one, the low score features resulted from k-best algorithm (where k=35). The union of those two sets produced a large set which contained 62 features. These features were removed.
+In order to keep the most important features, we've created two sets of features. The first one contained the ones that are highly correlated (with threshold = 0.85), and the second one, the low score features resulted from k-best algorithm (where k=35). The union of those two sets produced a large set which contained 62 features. These features were removed.
 
 The selected features are the following:
 ```
@@ -100,7 +100,7 @@ $ python -m flask run
 Having a trained model, our application receives a URL and outputs whether this URL is spam or not. Our model is trained on ISCXURL2016 Final Spam dataset, using Random Forest.
 
 #### Code
-The implementation of our application lies under several files in main folder. Each file has a discriptive name that yeilds its use.
+The implementation of our application lies under several files in main folder. Each file has a descriptive name that yields its use.
 
 ### Presentation
 
@@ -108,6 +108,6 @@ You can find a mini presentation of our project in pres/ folder
 
 ### Authors
 
-George Panagiotopoulos (cs219...)
+George Panagiotopoulos (cs2190012)
 Maria Despoina Siampou (cs220017)
 

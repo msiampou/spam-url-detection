@@ -19,5 +19,5 @@ def predict(given_url):
 
 
 if __name__ == '__main__':
-    result = predict('https://www.google.com/calendar/embed?showTitle=0&height=600&wkst=1&bgcolor=%23FFFFFF&src=qtbqjvhotpcmi2gbkhp15bbh7s@group.calendar.google.com&color=%235C1158&ctz=America/New_York')
+    result = predict('http://paypal.com.webscr.cmd.login.submit.dispatch.5885d80a13c0db1f8e263663d3faee8db2b24f7b84f1819343fd6c338b1d9d.222studio.com/UK/')
     print(result)
