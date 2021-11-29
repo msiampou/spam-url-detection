@@ -1,7 +1,5 @@
 # Spam-Page-Detection
 
-## M151: Web Systems and Information Retrieval
-
 ### Abstract
 
 In this work we create a classification model to identify Spam Pages based on their *URL*. ISCXURL2016 dataset, contains 79 features extracted from various benign and spam URLs. However, having a large number of features may lead overfitting, or consume extra time to compute unnecessary features. For that reason, we performed a feature exploration and chose to use only the most "meaningful" features. To evaluate our selection, we've performed a Cross Validation for various classifiers. Finally, we've implemented a simple Flask App, where a user can insert a URL to find out if it is spam or not.
